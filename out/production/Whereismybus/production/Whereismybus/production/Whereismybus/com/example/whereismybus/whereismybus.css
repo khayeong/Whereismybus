@@ -1,0 +1,70 @@
+.redbus {
+    -fx-image: url("bus1.png");
+}
+
+.yellowbus {
+    -fx-image: url("bus3.png");
+}
+
+.greenbus {
+    -fx-image: url("bus4.png");
+}
+
+.bluebus {
+    -fx-image: url("bus2.png");
+}
+
+.speechbubble1 {
+    -fx-image: url("말풍선1.png");
+}
+
+.speechbubble2 {
+    -fx-image: url("말풍선2.png");
+}
+
+.girl {
+    -fx-image: url("girl.png");
+}
+
+.man {
+    -fx-image: url("man.png");
+}
+
+.woman {
+    -fx-image: url("woman.png");
+}
+
+.loginBtn {
+    -fx-background-color: #FFCD28;
+    -fx-border-color: #FFAA28;
+    -fx-border-radius: 4px;
+}
+
+.loginBtn:hover {
+    -fx-background-color: #FFAA28;
+}
+
+.signupBtn {
+    -fx-background-color: #82EB5A;
+    -fx-border-color: #3ED0C8;
+    -fx-border-radius: 4px;
+}
+
+.signupBtn:hover {
+    -fx-background-color: #3ED0C8;
+}
+
+.textfield {
+    -fx-border-radius: 4px;
+}
+
+.goMainBtn {
+    -fx-background-color: #82B3ED;
+    -fx-border-color: #AD94EE;
+    -fx-border-radius: 4px;
+}
+
+.goMainBtn:hover {
+    -fx-background-color: #AD94EE;
+}
+
