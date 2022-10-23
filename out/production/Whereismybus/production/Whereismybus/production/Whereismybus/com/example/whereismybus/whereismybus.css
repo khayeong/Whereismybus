@@ -68,3 +68,23 @@
     -fx-background-color: #AD94EE;
 }
 
+.searchBtn {
+    -fx-background-color: #FFB6C1;
+    -fx-border-color: #FF848F;
+    -fx-border-radius: 4px;
+}
+
+.searchBtn:hover {
+    -fx-background-color: #FF848F;
+}
+
+.explainBtn {
+    -fx-background-color: #FFA778;
+    -fx-border-color: #FF7F50;
+    -fx-border-radius: 4px;
+}
+
+.explainBtn:hover {
+    -fx-background-color: #FF7F50;
+}
+

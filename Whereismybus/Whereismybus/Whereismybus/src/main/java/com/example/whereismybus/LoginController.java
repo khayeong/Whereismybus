@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import java.sql.*;
 
@@ -16,10 +17,6 @@ public class LoginController {
     private TextField id;
     @FXML
     private PasswordField pw;
-    @FXML
-    private TextField name;
-
-
     @FXML
     private Button loginBtn;
 
@@ -37,17 +34,16 @@ public class LoginController {
         while (rs.next()) {
             String userid = rs.getString("id");
             String userpw = rs.getString("pw");
-            if (id.equals(userid)) {
-                if (pw.equals(userpw)) {
-                    System.out.println("로그인 성공");
-                } else {
-                    System.out.println("비밀번호가 일치하지 않습니다");
-                }
+            if (id.equals(userid) && pw.equals(userpw)) {
+                System.out.println("로그인 성공");
             } else {
                 System.out.println("로그인 실패");
             }
+            System.out.println(userid);
+            System.out.println(userpw);
         }
     }
+
 
     @FXML
     private Button goMainBtn;

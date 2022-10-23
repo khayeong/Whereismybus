@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whereismybus.MainController">
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.whereismybus.MainController">
     <children>
-        <TextField fx:id="stationId" layoutX="379.0" layoutY="328.0" prefHeight="43.0" prefWidth="350.0" promptText="검색어를 입력하세요." styleClass="textfield">
-         <font>
-            <Font size="20.0" />
-         </font></TextField>
-        <Label layoutX="394.0" layoutY="175.0" text="내 버스는 어디에..">
+        <Label layoutX="394.0" layoutY="216.0" text="내 버스는 어디에..">
             <font>
                 <Font name="HYPost-Light" size="50.0" />
             </font>
         </Label>
         <ImageView fitHeight="116.0" fitWidth="185.0" layoutX="181.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" styleClass="speechbubble1" />
-        <ImageView fitHeight="103.0" fitWidth="159.0" layoutX="669.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true" styleClass="man" />
-        <ImageView fitHeight="249.0" fitWidth="256.0" layoutX="906.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" styleClass="woman" />
-        <ImageView fitHeight="127.0" fitWidth="190.0" layoutX="883.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" styleClass="speechbubble2" />
+        <ImageView fitHeight="103.0" fitWidth="159.0" layoutX="619.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" styleClass="man" />
+        <ImageView fitHeight="249.0" fitWidth="256.0" layoutX="906.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" styleClass="woman" />
+        <ImageView fitHeight="127.0" fitWidth="190.0" layoutX="883.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" styleClass="speechbubble2" />
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="680.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="greenbus" />
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="redbus" />
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="973.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="bluebus" />
@@ -39,16 +36,15 @@
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="331.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" styleClass="greenbus" />
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="18.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true" styleClass="bluebus" />
         <ImageView fitHeight="237.0" fitWidth="273.0" layoutX="-21.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" styleClass="girl" />
-      <Button layoutX="738.0" layoutY="328.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="80.0" text="검색하기">
+      <Button layoutX="612.0" layoutY="367.0" mnemonicParsing="false" onAction="#search" prefHeight="50.0" prefWidth="150.0" styleClass="searchBtn" text="검색하기">
          <font>
-            <Font name="HYPost-Light" size="15.0" />
+            <Font name="HYPost-Light" size="25.0" />
          </font>
       </Button>
-      <Text fx:id="result" layoutX="379.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="result">
+      <Button fx:id="explainBtn" layoutX="434.0" layoutY="367.0" mnemonicParsing="false" onAction="#explainScene" prefHeight="50.0" prefWidth="150.0" styleClass="explainBtn" text="설명보기">
          <font>
-            <Font size="36.0" />
+            <Font name="HYPost-Light" size="25.0" />
          </font>
-      </Text>
-      <TextField layoutX="520.0" layoutY="401.0" />
+      </Button>
     </children>
 </AnchorPane>
